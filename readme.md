@@ -5,3 +5,4 @@ You can subscribe to daily coding problems from here:
 
 ## Questions Solved:
 - [X] Day 1
+- [X] Day 2
