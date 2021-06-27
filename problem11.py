@@ -18,10 +18,14 @@ def checkForString(query_string,string_from_list):
     elif n1 == n2:
         return True if query_string == string_from_list else False   
     else:
-        for j in range(n1):
-            if query_string[j] != string_from_list[j]:
-                return False
-        return True
+        # using for loop for comparing each character in string
+        # for j in range(n1):
+        #     if query_string[j] != string_from_list[j]:
+        #         return False
+        # instead of using loop to compare each character in string we can use slicing
+        if query_string == string_from_list[:n1]:
+            return True
+        return False
 
 def main():
     input_list = input('Input the list of query strings: ').split()
